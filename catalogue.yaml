@@ -42,7 +42,7 @@
 
   - name: demon reload and start
     ansible.builtin.systemd_service:
-      demond_reload: true
+      demon_reload: true
       dest: /etc/systemd/system/catalogue.service
 
   # lets start after the data is loaded
