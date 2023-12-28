@@ -2,9 +2,9 @@
   hosts: redis
   become: yes
   tasks:
-  - name: install redis release
+  - name: install remi release
     ansible.builtin.dnf:
-      name: https://rpms.remirepo.net/enterprise/remi-release-8.rpm -y
+      name: https://rpms.remirepo.net/enterprise/remi-release-8.rpm
       state: present
 
   - name: enable redis
